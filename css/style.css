@@ -1,7 +1,7 @@
 /* ************** GENERAL ************* */
 
 * {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -86,6 +86,11 @@ p {
   line-height: 1.8rem;
 }
 
+.support {
+  align-content: start;
+  align-items: flex-start;
+}
+
 /* **************** SECTION 2 **************** */
 
 input,
@@ -101,16 +106,27 @@ textarea:hover {
 
 textarea {
   resize: none;
-
 }
 
 .btn i {
   color: #ff0000;
 }
 
-.btn:hover {
-  background: rgb(29, 249, 29);
+.btn,
+.border {
+  letter-spacing: 1px;
   color: #000000;
+}
+
+.border {
+  background: lightgray;
+}
+
+.btn:hover,
+.border:hover {
+  background: #87cefa;
+  color: #000000;
+  font-weight: 700;
 }
 
 .right-part {
