@@ -15,6 +15,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -37,11 +43,11 @@
     </header>
     <section class="section-1">
       <h2 class="text-center fw-bold text-uppercase">Nos Actions</h2>
-      <div class="container-fluid" id="support">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-sm">
             <div class="container">
-              <div class="row actions text-center fs-7">
+              <div class="row text-left fs-7">
                 <div class="col-sm-12">
                   <h3 class="fs-5 fw-bold">Droits des personnes handicapées</h3>
                   <p>
@@ -49,15 +55,17 @@
                     iusto! Id distinctio repellendus minus accusamus illo
                     cumque, vero atque suscipit.
                   </p>
-                  <div class="button">
-                    <button class="btn btn-secondary">Lire la suite...</button>
+                  <div class="button mb-3">
+                    <button class="btn btn-secondary text-white">
+                      Lire la suite...
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="row actions text-sm-center fs-7">
+            <div class="row text-left fs-7">
               <h3 class="fs-5 fw-bold">Accesibilité</h3>
               <p>
                 Nulla reiciendis libero sequi beatae, labore saepe veritatis
@@ -65,12 +73,14 @@
                 ipsam blanditiis quia sapiente quasi perspiciatis aut nihil hic.
               </p>
             </div>
-            <div class="button">
-              <button class="btn btn-secondary">Lire la suite...</button>
+            <div class="button mb-3">
+              <button class="btn btn-secondary text-white">
+                Lire la suite...
+              </button>
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="row actions text-sm-center fs-7">
+            <div class="row text-left fs-7">
               <h3 class="fs-5 fw-bold">Enfance, scolarité</h3>
               <p>
                 Ipsa consequuntur magni eos consequatur ipsam blanditiis quia
@@ -78,12 +88,14 @@
                 quam animi. Perspiciatis, nisi.
               </p>
             </div>
-            <div class="button">
-              <button class="btn btn-secondary">Lire la suite...</button>
+            <div class="button mb-3">
+              <button class="btn btn-secondary text-white">
+                Lire la suite...
+              </button>
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="row actions text-sm-center fs-7">
+            <div class="row text-left fs-7">
               <h3 class="fs-5 fw-bold">
                 Emploi & insertion socio-professionnelle
               </h3>
@@ -94,11 +106,13 @@
               </p>
             </div>
             <div class="button">
-              <button class="btn btn-secondary">Lire la suite...</button>
+              <button class="btn btn-secondary text-white">
+                Lire la suite...
+              </button>
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="row actions text-sm-center fs-7">
+            <div class="row text-left fs-7">
               <h3 class="fs-5 fw-bold">Accès aux soins</h3>
               <p>
                 Ipsa consequuntur magni eos consequatur ipsam blanditiis quia
@@ -107,11 +121,13 @@
               </p>
             </div>
             <div class="button">
-              <button class="btn btn-secondary">Lire la suite...</button>
+              <button class="btn btn-secondary text-white">
+                Lire la suite...
+              </button>
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="row actions text-sm-center fs-7">
+            <div class="row text-left fs-7">
               <h3 class="fs-5 fw-bold">Formation</h3>
               <p>
                 Ipsa consequuntur magni eos consequatur ipsam blanditiis quia
@@ -120,19 +136,22 @@
               </p>
             </div>
             <div class="button">
-              <button class="btn btn-secondary">Lire la suite...</button>
+              <button class="btn btn-secondary text-white">
+                Lire la suite...
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section class="section-2">
       <h2>Contactez-nous</h2>
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-7 col-sm-9">
             <div class="container">
-              <div class="contactus" id="left-part">
+              <div class="contactus">
                 <form action="#" method="post">
                   <div>
                     <div class="contact mb-1">
@@ -166,7 +185,7 @@
                       ></textarea>
                     </div>
                     <button
-                      class="btn btn-secondary mt-2 fw-bold opacity-50"
+                      class="btn btn-secondary mt-2 fw-bold opacity-75"
                       type="button"
                     >
                       Envoyez votre message
@@ -179,7 +198,7 @@
           </div>
           <div class="col-lg-5 col-sm-9">
             <div class="container">
-              <div class="address" id="right-part">
+              <div class="right-part">
                 <div>
                   <i class="icon fa-solid fa-location-dot"></i>
                   35 Bd de Rennes - 35000 Fougères
@@ -188,11 +207,17 @@
                   <i class="icon fa-solid fa-phone"></i>
                   02 98 76 40 00
                 </div>
-                <div class="envelop">
-                  <a href="#">
+                <div>
+                  <a href="#" class="envelop">
                     <i class="icon fa-solid fa-envelope"></i>
-                    abh-asso@orange.fr
+                    abh.asso@orange.fr
                   </a>
+                </div>
+                <div class="newsletter">
+                  <button class="btn mt-2 border border-4" type="button">
+                    Inscrivez vous à notre newsletter
+                    <i class="fa-solid fa-paper-plane ps-2"></i>
+                  </button>
                 </div>
               </div>
             </div>
