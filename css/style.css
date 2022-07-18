@@ -1,0 +1,209 @@
+/* ************** GENERAL ************* */
+
+* {
+  font-family: Roboto, sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.section-1,
+.section-2,
+h2 {
+  margin: 45px;
+}
+
+.section-1,
+.section-2 {
+  border-top: 1px solid #c1bfbf;
+}
+
+/* ************* HEADER ************ */
+
+header {
+  background: url(../assets/img/wheelchair.jpg) center/cover;
+  height: 70vh;
+  margin-bottom: 70px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding-top: 150px;
+  padding-left: 30px;
+  color: #e4e0e0;
+}
+
+h1,
+nav {
+  max-width: 100%;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.events {
+  margin-bottom: 20px;
+}
+
+/* ****************** MENU BAR ************** */
+
+nav li {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: 0.4s ease;
+  padding: 10px 40px;
+  position: relative;
+}
+
+nav li:hover::after {
+  content: "";
+  width: 55%;
+  height: 5px;
+  position: absolute;
+  background: #ff0000;
+  transform: translateY(3px);
+}
+
+.nav-link,
+.nav-link:hover {
+  color: #ffffff;
+}
+
+
+/* **************** SECTION 1 ***************** */
+h3 {
+  padding-bottom: 20px;
+  letter-spacing: 1px;
+  padding-right: 5px;
+}
+
+p {
+  line-height: 1.8rem;
+}
+
+/* **************** SECTION 2 **************** */
+
+input,
+textarea {
+  width: 80%;
+  margin: 5px auto;
+}
+
+input:hover,
+textarea:hover {
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+
+}
+
+.btn i {
+  color: #ff0000;
+}
+
+.btn:hover {
+  background: rgb(29, 249, 29);
+  color: #000000;
+}
+
+.right-part {
+  line-height: 3.5rem;
+}
+
+.envelop {
+  text-decoration: none;
+  color: #000000;
+}
+
+.envelop:hover {
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: 0.4s ease;
+  color: #0000ff;
+}
+
+/* *************** FOOTER ************** */
+
+footer {
+  margin: 80px auto;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  min-width: 300px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+footer a {
+  color: #7c7b7b;
+  border: 1px solid #8a8787;
+  border-radius: 40px;
+  width: 20px;
+  height: 20px;
+  padding: 10px 15px;
+  transition: 0.4s;
+  margin-bottom: 50px;
+}
+
+footer a:hover {
+  background: #d3d3d3;
+  color: black;
+}
+
+
+/* **************** QUERIES ****************** */
+
+
+@media screen and (max-width: 775px) {
+  h1 {
+    max-width: 70%;
+    font-size: 1.4rem;
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  header {
+    background: none;
+    height: 30vh;
+  }
+
+  nav {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  h1 {
+    max-width: 70%;
+    font-size: 1.2rem;
+    padding-top: 200px;
+    color: black;
+  }
+
+  #right-part {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+}
